@@ -1,1 +1,1 @@
-# frontend-drip-store
+# Projeto front-end drip store
