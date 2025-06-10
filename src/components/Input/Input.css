@@ -1,0 +1,31 @@
+
+.box-input{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.box-input input{
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  border: none;
+  border-radius: .5rem;
+  padding-left:1.5rem ;
+  font-size: 1rem;
+  outline-color: #C92071;
+  color: #666666;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: .047rem;
+}
+
+.box-input input::placeholder{
+  color: #8F8F8F;
+  letter-spacing: .047rem;
+}
+
+.box-input img{
+  position: absolute;
+  margin-right: 1rem;
+}
