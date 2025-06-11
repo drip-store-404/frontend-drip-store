@@ -9,6 +9,7 @@ import { NaoEncontrado } from '../pages/NaoEncontrado';
 
 export const App = () =>{
   return (
+    <>
     <BrowserRouter>
      <Header/>
      <Routes>
@@ -19,5 +20,6 @@ export const App = () =>{
       <Route path='*' element={<NaoEncontrado/>}/>
      </Routes>
     </BrowserRouter>
+    </>
   );
 }
