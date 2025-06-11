@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Header } from "./Header/Header";
 import {Inicio} from '../pages/Inicio'
 import { Produtos } from '../pages/Produtos';
 import { Pedidos } from '../pages/Pedidos';
 import { Ofertas } from '../pages/Ofertas';
 import { NaoEncontrado } from '../pages/NaoEncontrado';
-
+import { Footer } from './Footer/Footer';
 
 export const App = () =>{
   return (
@@ -18,6 +18,7 @@ export const App = () =>{
       <Route path='ofertas' element={<Ofertas/>}/>
       <Route path='*' element={<NaoEncontrado/>}/>
      </Routes>
+     <Footer/>
     </BrowserRouter>
   );
 }
