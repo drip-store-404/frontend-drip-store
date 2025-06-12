@@ -1,36 +1,47 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Carrossel.css';
 
 export const Carrossel = () => {
     const slides = [
         {
-            imagem: '../assets/Tenis.png',
+            enfeite: '../../../public/Balls.svg',
+            imagem: '../../../public/Tenis.png',
             pretitulo: 'Melhores ofertas personalizadas',
             titulo: 'Queima de estoque Nike 🔥',
+            descricao: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
+            botaoTexto: 'Ver Ofertas',
+            botaoLink: '#slide1',
+        },
+        {
+            enfeite: '../../../public/Balls.svg',
+            imagem: '../../../public/Tenis.png',
+            pretitulo: 'Melhores ofertas personalizadas',
+            titulo: 'Queima de stoque Nike 🔥',
             descricao: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
             botaoTexto: 'Saiba mais',
             botaoLink: '#slide1',
         },
         {
-            imagem: '../assets/Tenis.png',
+            enfeite: '../../../public/Balls.svg',
+            imagem: '../../../public/Tenis.png',
             pretitulo: 'Melhores ofertas personalizadas',
-            titulo: 'Queima de estoque Nike 🔥',
+            titulo: 'Queima de stoque Nike 🔥',
             descricao: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
             botaoTexto: 'Saiba mais',
             botaoLink: '#slide1',
         },
-        {
-            imagem: '../assets/Tenis.png',
+         {
+            enfeite: '../../../public/Balls.svg',
+            imagem: '../../../public/Tenis.png',
             pretitulo: 'Melhores ofertas personalizadas',
-            titulo: 'Queima de estoque Nike 🔥',
+            titulo: 'Queima de stoque Nike 🔥',
             descricao: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
             botaoTexto: 'Saiba mais',
             botaoLink: '#slide1',
-        },
+        }
     ];
 
     return (
@@ -38,9 +49,8 @@ export const Carrossel = () => {
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
-            navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 8000 }}
             loop={true}
         >
             {slides.map((slide, index) => (
@@ -56,6 +66,7 @@ export const Carrossel = () => {
                             <button>{slide.botaoTexto}</button>
                         </a>
                     </div>
+                    <img src={slide.enfeite} />
                 </SwiperSlide>
             ))}
         </Swiper>

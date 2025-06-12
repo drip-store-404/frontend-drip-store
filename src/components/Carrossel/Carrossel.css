@@ -1,45 +1,89 @@
 .swiper {
   width: 100%;
-  height: 400px;
   position: relative;
+  height: 42.563rem;
 }
 
 .swiper-slide {
-  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  padding: 40px;
+  background-size: 54.844rem ;
+  background-repeat: no-repeat;
+  background-position:35.078rem;
+}
+
+.swiper-pagination {
+  margin: 80.750rem 0 1.125rem 0;
+  top: 50.625rem;
+  left: 42.563rem;
+}
+
+.swiper img {
+  width: 8.750rem;
+  height: 8.750rem;
+  margin: 4.875rem 2.313rem 0 47rem;
+}
+.swiper-pagination-bullet {
+  background-color: #ccc;
+  opacity: 1;
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 50.625rem;
+  left: 43.938rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #C92071;
 }
 
 .slide-content {
-  max-width: 500px;
-  padding: 20px;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 37rem;
 }
 
-.slide-content h2 {
-  margin: 0 0 10px;
-  font-size: 28px;
+.slide-content h1 {
+  margin: 1.250rem 0 1.125rem 6.250rem;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 4.125rem;
+  letter-spacing: .063rem;
+}
+
+.slide-content h3 {
+  color: #F6AA1C;
+  margin: 7.750rem 0 0 6.250rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: .045rem;
+
 }
 
 .slide-content p {
-  margin: 0 0 20px;
-  font-size: 16px;
+  color: #474747;
+  margin: 1.250rem 0 0 6.250rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2.125rem;
+  letter-spacing: .047rem;
+
 }
 
+
 .slide-content button {
-  padding: 10px 20px;
+  margin: 2.5rem 0 0 6.250rem;
+  width: 13.750rem;
+  height: 3rem;
   background-color: #C92071;
   color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.047rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .slide-content button:hover {
-  background-color: #C92071;
+  background-color: #a0195a;
 }
