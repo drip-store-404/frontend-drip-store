@@ -10,7 +10,8 @@ export const Carrossel = () => {
             enfeite: '../../../public/Balls.svg',
             imagem: '../../../public/Tenis.png',
             pretitulo: 'Melhores ofertas personalizadas',
-            titulo: 'Queima de estoque Nike 🔥',
+            titulo: 'Queima de estoque Nike',
+            icone: '../../../public/Fogo.png',
             descricao: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
             botaoTexto: 'Ver Ofertas',
             botaoLink: '#slide1',
@@ -19,7 +20,8 @@ export const Carrossel = () => {
             enfeite: '../../../public/Balls.svg',
             imagem: '../../../public/Tenis.png',
             pretitulo: 'Melhores ofertas personalizadas',
-            titulo: 'Queima de stoque Nike 🔥',
+            titulo: 'Queima de estoque Nike',
+            icone: '../../../public/Fogo.png',
             descricao: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
             botaoTexto: 'Saiba mais',
             botaoLink: '#slide1',
@@ -28,16 +30,18 @@ export const Carrossel = () => {
             enfeite: '../../../public/Balls.svg',
             imagem: '../../../public/Tenis.png',
             pretitulo: 'Melhores ofertas personalizadas',
-            titulo: 'Queima de stoque Nike 🔥',
+             titulo: 'Queima de estoque Nike',
+            icone: '../../../public/Fogo.png',
             descricao: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
             botaoTexto: 'Saiba mais',
             botaoLink: '#slide1',
         },
-         {
+        {
             enfeite: '../../../public/Balls.svg',
             imagem: '../../../public/Tenis.png',
             pretitulo: 'Melhores ofertas personalizadas',
-            titulo: 'Queima de stoque Nike 🔥',
+            titulo: 'Queima de estoque Nike',
+            icone: '../../../public/Fogo.png',
             descricao: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
             botaoTexto: 'Saiba mais',
             botaoLink: '#slide1',
@@ -60,6 +64,9 @@ export const Carrossel = () => {
                 >
                     <div className="slide-content">
                         <h3>{slide.pretitulo}</h3>
+                        <div className='fire'>
+                            <img src={slide.icone} />
+                        </div>
                         <h1>{slide.titulo}</h1>
                         <p>{slide.descricao}</p>
                         <a href={slide.botaoLink}>

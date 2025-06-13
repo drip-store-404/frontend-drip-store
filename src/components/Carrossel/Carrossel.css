@@ -6,9 +6,9 @@
 
 .swiper-slide {
   display: flex;
-  background-size: 54.844rem ;
+  background-size: 54.844rem;
   background-repeat: no-repeat;
-  background-position:35.078rem;
+  background-position: 35.078rem;
 }
 
 .swiper-pagination {
@@ -22,6 +22,7 @@
   height: 8.750rem;
   margin: 4.875rem 2.313rem 0 47rem;
 }
+
 .swiper-pagination-bullet {
   background-color: #ccc;
   opacity: 1;
@@ -36,8 +37,21 @@
 }
 
 .slide-content {
+  position: relative;
   width: 100%;
   max-width: 37rem;
+}
+
+.fire {
+  position: absolute;
+  z-index: 10;
+}
+
+.fire img {
+  position: relative;
+  margin: 5.39rem 0 1.125rem 32.9rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .slide-content h1 {
