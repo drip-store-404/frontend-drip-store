@@ -1,0 +1,11 @@
+cardStyles {
+  width: 25.313rem;
+  height: 15.688rem;
+}
+
+Button {
+  width: 9.563rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  color:rgb(230, 7, 7);
+};
