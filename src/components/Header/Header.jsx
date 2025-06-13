@@ -5,7 +5,7 @@ import { ShopCart } from '../ShopCart/ShopCart';
 import { Input } from '../Input/Input';
 import { Useful } from '../Useful/Useful';
 import { Nav } from '../Nav/Nav';
-import { useState } from 'react';
+import { useState} from 'react';
 
 
 export const Header = () => {
