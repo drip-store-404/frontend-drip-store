@@ -1,6 +1,7 @@
+import { Carrossel } from "../components/Carrossel/Carrossel";
 
 export const Inicio = () => {
   return(
-    <h1>Página de Início</h1>
+    <Carrossel/>
   );
 }

@@ -9,6 +9,7 @@ import { Footer } from './Footer/Footer';
 
 export const App = () =>{
   return (
+    <>
     <BrowserRouter>
      <Header/>
      <Routes>
@@ -20,5 +21,6 @@ export const App = () =>{
      </Routes>
      <Footer/>
     </BrowserRouter>
+    </>
   );
 }
