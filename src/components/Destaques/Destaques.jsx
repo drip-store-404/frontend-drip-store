@@ -1,18 +1,23 @@
-import React from 'react';
-
+import { Card } from './Card';
 import './Destaques.css'
 
-export const Destaques = ({ children }) => (
-  <div className="destaques">
-    <h2>Conteúdos em Destaque</h2>
-    <div className="conteúdos">
-      {children}
-    </div>
-  </div>
-);
+export const Destaques = ({ children }) => {
+  return (
+    <Card>
+      <div className='camisa'>
+        <p>Novo drop Supreme</p>
+        <button>Enviar</button>
+      </div>
 
-export const Destaques = ({discount, button, })
+      <div className='tênis'>
+        <p>Coleção Adidas</p>
+        <button>Enviar</button>
+      </div>
 
-
-return (
-
+      <div className='fone'>
+        <p>Novo Beats Bass</p>
+        <button>Enviar</button>
+      </div>
+    </Card>
+  )
+};
