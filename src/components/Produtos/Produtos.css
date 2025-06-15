@@ -1,0 +1,144 @@
+.card {
+  display: flex;
+  width: 18rem;
+  height: 27.438rem;
+  margin: 0 12rem;
+  flex-direction: column;
+  margin: 3rem 0 0 15rem;
+
+}
+
+.box-card {
+  display: flex;
+  width: 18rem;
+  height: 20.063rem;
+  /* position: relative; */
+  border-radius: 0.25rem;
+  overflow: hidden;
+  /* p imagem n vazar do container */
+  background-color: #FFFFFF;
+  box-shadow: 5%;
+  /* desfoque(x) distribuidor (y) color*/
+
+}
+
+.produto-link {
+  text-decoration: none; 
+  /* pra n ficar sublinhado */
+  color: inherit;
+  /* pra usar a cor do conteudo */
+}
+
+
+.box-produto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* pra imagem n ser cortada se vazar */
+  margin: 0 0 0 -1rem;
+
+}
+
+
+.box-card .span-desconto-card {
+  display: flex;
+  width: 6rem;
+  height: 2rem;
+  position: absolute;
+  border-radius: 1.813rem;
+  margin: 1rem 0 0 1rem;
+
+}
+
+.span-desconto-card {
+  background-color: #E7FF86;
+  color: #474747;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.047rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box-detalhes {
+  display: flex;
+  width: 18.25rem;
+  height: 7.375rem;
+}
+
+.box-detalhes .categoria-card{
+  width: 2.188rem;
+  height: 1.5rem;
+  margin: 0.7rem 0;
+}
+
+.categoria-card {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  color: #8F8F8F;
+  letter-spacing: 0.047rem;
+
+}
+
+.box-detalhes .nome-card {
+  width: 17.688rem ;
+  height: 2.375rem ;
+  margin: 2rem 0 0 -2.2rem;
+}
+
+.nome-card {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.047rem;
+  color: #474747;
+}
+
+.box-detalhes .preco-card {
+  width: 8.75rem ;
+  height: 2.375rem;
+  margin: 4.4rem 0 0 -17.7rem;
+}
+
+ .box-detalhes .preco-original-card{
+  width: 3.938rem;
+  height: 2.375rem;
+}
+
+.preco-original-card {
+  color: #8F8F8F;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.047rem;
+}
+
+.box-detalhes .preco-atual-card {
+  width: 3.938rem ;
+  height: 2.375rem;
+}
+
+.preco-atual-card {
+  color: #1F1F1F;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.047rem;
+}
+
+.preco-sem-desconto {
+   color: #1F1F1F;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.047rem;
+}
