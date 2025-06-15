@@ -10,5 +10,5 @@ export const ShopCart = ({value}) => {
       </a>
       <span>{value}</span>
     </div>
-  )
+  );
 }

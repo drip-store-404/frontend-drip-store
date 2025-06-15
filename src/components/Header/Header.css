@@ -1,6 +1,7 @@
 #header {
   background-color: white;
 }
+
 #header .box-header {
   width: 90rem;
   height: 12rem;
@@ -15,3 +16,4 @@
   margin-top: 2.125rem;
   display: flex;
 }
+

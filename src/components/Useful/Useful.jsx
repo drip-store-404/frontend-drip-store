@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 
 export const Useful = ({margin, color, to,value, target, isActive, onClick, fontWeight, textUnderlineOffset, borderBottom, paddingBottom, borderEndStartRadius, borderEndEndRadius}) => {
+  
   return (
     <p style={{ margin: margin}} onClick={onClick}>
     <Link
@@ -17,6 +18,7 @@ export const Useful = ({margin, color, to,value, target, isActive, onClick, font
     }}
     to={to}
     target={target}
+    display={display}
     >{value}</Link>
     </p>
   );
