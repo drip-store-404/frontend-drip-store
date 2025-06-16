@@ -7,9 +7,9 @@ import { Useful } from '../Useful/Useful';
 import { Nav } from '../Nav/Nav';
 import { useState} from 'react';
 
-
 export const Header = () => {
   const [isActiveItem, setActiveItem] = useState("");
+  
   return (
     <header id="header">
       <div className='box-header'>
@@ -41,15 +41,14 @@ export const Header = () => {
               <Useful
                 paddingBottom={null}
                 borderBottom={null}
-                fontWeight={null}
-                borderRadius={null}
                 borderEndEndRadius={null}
                 borderEndStartRadius={null}
                 value={'Início'}
                 color={'#474747'}
                 to={'/'}
-                isActive={isActiveItem === 'Início'}
+                isActive={location.pathname === '/'}
                 onClick={() => setActiveItem('Início')}
+                fontWeight={'normal'}
               />
             </li>
             <li>
@@ -92,5 +91,5 @@ export const Header = () => {
         <ShopCart value={2} />
       </div>
     </header>
-  );
+  )
 }
