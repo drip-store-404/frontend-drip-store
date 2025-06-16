@@ -12,21 +12,16 @@
   display: flex;
   width: 18rem;
   height: 20.063rem;
-  /* position: relative; */
   border-radius: 0.25rem;
   overflow: hidden;
-  /* p imagem n vazar do container */
   background-color: #FFFFFF;
   box-shadow: 5%;
-  /* desfoque(x) distribuidor (y) color*/
 
 }
 
 .produto-link {
   text-decoration: none; 
-  /* pra n ficar sublinhado */
   color: inherit;
-  /* pra usar a cor do conteudo */
 }
 
 
@@ -34,7 +29,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  /* pra imagem n ser cortada se vazar */
   margin: 0 0 0 -1rem;
 
 }
