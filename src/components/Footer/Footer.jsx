@@ -4,6 +4,7 @@ import { Useful } from '../Useful/Useful';
 import './Footer.css';
 
 export const Footer = () => {
+  const prevent = (e) => e.preventDefault();
   return (
     <footer id='footer'>
       <div className="box-footer">
@@ -11,32 +12,31 @@ export const Footer = () => {
           width={"15.813rem"}
           color={'#ffffff'} />
 
-        <p id='lorem'>
+        <a id='lorem' href="#" onClick={prevent}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-        </p>
+        </a>
 
-        <div
-          id='imagens-footer'>
-          <img className='facebook' src="../../../public/Facebook.svg" />
-          <img className='instagram' src="../../../public/Instagram.svg" />
-          <img className='twitter' src="../../../public/Twitter.svg" />
+        <div id='imagens-footer'>
+          <a href="#" onClick={prevent}><img className='facebook' src="../../../public/Facebook.svg" /></a>
+          <a href="#" onClick={prevent}><img className='instagram' src="../../../public/Instagram.svg" /></a>
+          <a href="#" onClick={prevent}><img className='twitter' src="../../../public/Twitter.svg" /></a>
         </div>
 
         <p id='info-footer'> Informação</p>
 
         <div className='info-footer-children'>
           <ul>
-            <li>Sobre Drip Store</li>
+            <li><a href="#" onClick={prevent}>Sobre Drip Store</a></li>
             <br />
-            <li>Segurança</li>
+            <li><a href="#" onClick={prevent}>Segurança</a></li>
             <br />
-            <li>Wishlist</li>
+            <li><a href="#" onClick={prevent}>Wishlist</a></li>
             <br />
-            <li>Blog</li>
+            <li><a href="#" onClick={prevent}>Blog</a></li>
             <br />
-            <li>Trabalhe conosco</li>
+            <li><a href="#" onClick={prevent}>Trabalhe conosco</a></li>
             <br />
-            <li>Meus pedidos</li>
+            <li><a href="#" onClick={prevent}>Meus pedidos</a></li>
           </ul>
         </div>
 
@@ -86,19 +86,16 @@ export const Footer = () => {
           </li>
         </Nav>
 
-        <p id='contato-footer'>
-          Contato
-        </p>
+        <p id='contato-footer'>Contato</p>
 
-        <p
-          className='local-contato-footer'>
+        <a className='local-contato-footer' href="#" onClick={prevent}>
           Av. Santos Dumont, 1510 - 1<br />
           andar - Aldeota, Fortaleza -<br />
           CE, 60150-161
-        </p>
-        <p className='numero-contato-footer'>
+        </a>
+        <a className='numero-contato-footer' href="#" onClick={prevent}>
           (85) 3051-3411
-        </p>
+        </a>
 
         <hr id='hr-footer'></hr>
 
