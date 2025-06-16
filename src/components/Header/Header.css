@@ -1,9 +1,8 @@
-
 #header {
-  width: 100%;
+  background-color: white;
 }
 
-#header .box-header{
+#header .box-header {
   width: 90rem;
   height: 12rem;
   margin: 0 auto;
@@ -11,9 +10,10 @@
   display: flex;
 }
 
-#header .box-header .box-header-children{
-   width: 62.063rem;
-   height: 8.063rem;
-   margin-top: 2.125rem;
-   display: flex;
+#header .box-header .box-header-children {
+  width: 62.063rem;
+  height: 8.063rem;
+  margin-top: 2.125rem;
+  display: flex;
 }
+

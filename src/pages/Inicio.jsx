@@ -1,11 +1,13 @@
 import { Destaques } from "../components/Destaques/destaques";
+import { Carrossel } from "../components/Carrossel/Carrossel";
+import { Offers } from "../components/Offers/Offers";
 
 export const Inicio = () => {
-  return(
+  return (
     <>
-    <h1>Página de Início</h1>
-
-    <Destaques/>
+      <Carrossel />
+      <Offers />
+      <Destaques/>
     </>
   );
   
