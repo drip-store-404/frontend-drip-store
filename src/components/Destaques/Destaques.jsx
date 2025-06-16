@@ -2,13 +2,6 @@ import './Destaques.css'
 import { Produtos } from '../Produtos/Produtos';
 import { Link } from 'react-router-dom';
 
-
-// const produtos = Array.from({ length:
-//         8 }).map((_, i)) => ({
-//           id: i,
-//           imagem:'../../../public/sapato.svg'
-//         })
-
 export const Destaques = () => {
 
   const produtos = Array.from({ length: 8 }).map((_, i) => ({

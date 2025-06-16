@@ -6,7 +6,7 @@
 #destaque .box-destaque {
   max-width: 100%;
   width: 77rem;
-  margin: 0 -1.5rem;
+  margin: 0 -7rem;
   /* vertical, horizontal */
   display: flex;
   flex-direction: column;
