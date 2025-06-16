@@ -1,4 +1,4 @@
-import { Destaques } from "../components/Destaques/destaques";
+import { Destaques } from "../components/Destaques/Destaques"; 
 import { Carrossel } from "../components/Carrossel/Carrossel";
 import { Offers } from "../components/Offers/Offers";
 

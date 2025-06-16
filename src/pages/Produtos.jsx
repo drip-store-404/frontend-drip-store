@@ -1,6 +1,7 @@
+import { Tenis } from "../components/Produtos/TenisProduto";
 
 export const Produtos = () => {
   return(
-    <h1>Página de Produtos</h1>
+    <Tenis/>
   );
 }
