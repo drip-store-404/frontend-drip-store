@@ -13,11 +13,7 @@ export const Produtos = ({ categoria, nome, precoOriginal, precoComDesconto, tem
           <img className='box-produto' src="../../../public/sapato.svg" />
 
         </div>
-        <p>
-
-        </p>
-
-
+      
         <div className='box-detalhes'>
 
           <p className='categoria-card'>{categoria}</p>
