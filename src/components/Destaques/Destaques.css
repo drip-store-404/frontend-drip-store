@@ -1,13 +1,12 @@
 #destaque {
   width: 100%;
-  background-color: #F9F8FE;
+  background-color: #F5F5F5;
 }
 
 #destaque .box-destaque {
   max-width: 100%;
   width: 77rem;
   margin: 0 -7rem;
-  /* vertical, horizontal */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,11 +27,9 @@
 
 .ver-todos {
   display:flex;
-  gap: 0.375rem;/* espaço entre o texto e a seta */
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  cursor: pointer; /* pra virar dedo */
   color: #C92071;
 }
 
@@ -65,7 +62,6 @@
 .container-produtos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  /*auto-fit: criar o max de colunas q couber| minmax: minimo de px de largura, 1fr = 1 fração de espaço disponivel */
   gap: 4rem;
   cursor: pointer;
 }

@@ -1,6 +1,17 @@
-import './TenisProdutos.css'
+import './Produtos.css'
+import { Produtos } from './Product';
 
 export const Tenis = ({ categoria, nome, precoOriginal, precoComDesconto, temDesconto }) => {
+
+  const produtos = Array.from({ length: 15 }).map((_, i) => ({
+    id: i,
+    categoria: "Tênis",
+    nome: `K-Swiss V8 - Masculino`,
+    precoOriginal: 200,
+    precoComDesconto: 100,
+    temDesconto: i < 2,
+  }));
+
   return (
     <>
     <div className='divpaizao'>
@@ -52,22 +63,17 @@ export const Tenis = ({ categoria, nome, precoOriginal, precoComDesconto, temDes
 
         <p className='categoria-produtos'>{categoria}</p>
 
-        <p className='nome-produto'>{nome}</p>
+          {produtos.map(produto => (
+            <Produtos
+              key={produto.id}
+              categoria={produto.categoria}
+              nome={produto.nome}
+              precoOriginal={produto.precoOriginal}
+              precoComDesconto={produto.precoComDesconto}
+              temDesconto={produto.temDesconto}
+            />
+          ))}
 
-        <p className='preco-produto'>
-          {temDesconto ? (
-            <>
-              <s className='preco-original-produto'>${precoOriginal}</s>{' '}
-              <strong className='preco-atual-produto'>${precoComDesconto}</strong>
-            </>
-            // pra n ter q criar uma div
-          ) : (
-            <strong className='preco-sem-desconto'>${precoOriginal}</strong>
-          )}
-
-        </p>
-        {/*   {' '} p/ fazer um espaço em branco  */}
-        {/* se temDesconto for verdadeiro, vai me dar o preço com deconto e o preço antigo riscado, se for falso fica só o preçoOriginal sem o desconto */}
       </div>
       </div>
       </>

@@ -91,5 +91,5 @@ export const Header = () => {
         <ShopCart value={2} />
       </div>
     </header>
-  );
+  )
 }

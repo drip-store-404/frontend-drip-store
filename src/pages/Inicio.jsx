@@ -6,8 +6,8 @@ export const Inicio = () => {
   return (
     <>
       <Carrossel />
-      <Offers />
       <Destaques/>
+      <Offers />
     </>
   );
   
