@@ -1,6 +1,9 @@
-.swiper {
+.all {
   background-color: #F5F5F5;
-  width: 100%;
+}
+
+.swiper {
+  width: 90rem;
   position: relative;
   height: 42.563rem;
 }
@@ -9,7 +12,7 @@
   display: flex;
   background-size: 54.844rem;
   background-repeat: no-repeat;
-  background-position: 35.078rem;
+  background-position: 31.078rem;
 }
 
 .swiper-pagination {

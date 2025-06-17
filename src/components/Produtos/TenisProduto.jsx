@@ -2,11 +2,11 @@ import './TenisProdutos.css'
 
 export const Tenis = ({ categoria, nome, precoOriginal, precoComDesconto, temDesconto }) => {
   return (
-    <>
+    <div className='pagina-produtos'>
 
-      <select>
+      {/* <select>
         <option value=""></option>
-      </select>
+      </select> */}
 
 
       <div className='detalhes-produtos'>
@@ -30,7 +30,7 @@ export const Tenis = ({ categoria, nome, precoOriginal, precoComDesconto, temDes
         {/*   {' '} p/ fazer um espaço em branco  */}
         {/* se temDesconto for verdadeiro, vai me dar o preço com deconto e o preço antigo riscado, se for falso fica só o preçoOriginal sem o desconto */}
       </div>
-      </>
+    </div>
 
 
   );

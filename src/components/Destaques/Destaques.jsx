@@ -1,5 +1,5 @@
 import './Destaques.css'
-import { Produtos } from '../Produtos/Produtos';
+import { Produtos } from '../Produtos/Product';
 import { Link } from 'react-router-dom';
 
 export const Destaques = () => {
@@ -10,7 +10,7 @@ export const Destaques = () => {
     nome: `K-Swiss V8 - Masculino`,
     precoOriginal: 200,
     precoComDesconto: 100,
-    temDesconto: i < 2, //so os 2 primeiros vão ter desconto
+    temDesconto: i< 2,
   }));
 
 
