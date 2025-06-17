@@ -1,0 +1,40 @@
+.divpaizao{
+  background-color: rgb(187, 191, 194);
+  padding-top: 0;
+}
+
+.titulo-quantidade{
+  display: flex;
+  position: relative;
+  top: 2.3rem;
+  padding: 1rem 6.4rem;
+  font-weight: 700;
+  color: #474747;
+}
+
+.produtos{
+  font-weight: 200;
+  padding-left: 0.1rem;
+}
+
+.box-paizao  {
+  position: relative;
+  top: 5rem;
+  padding: 1rem 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
+hr{
+ width: 15.5rem;
+}
+
+.box-marca{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.1rem;
+}
