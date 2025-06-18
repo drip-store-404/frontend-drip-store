@@ -1,7 +1,7 @@
 import './Produtos.css'
 import { Produtos } from './Product';
 
-export const Tenis = ({ categoria, nome, precoOriginal, precoComDesconto, temDesconto }) => {
+export const Tenis = () => {
 
   const produtos = Array.from({ length: 15 }).map((_, i) => ({
     id: i,
