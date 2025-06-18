@@ -7,6 +7,7 @@ import { Pedidos } from '../pages/Pedidos';
 import { Ofertas } from '../pages/Ofertas';
 import { NaoEncontrado } from '../pages/NaoEncontrado';
 import {Footer} from '../components/Footer/Footer.jsx'
+import { Conta } from '../components/Conta/conta.jsx';
 
 export const Router = () =>{
   return (
@@ -19,8 +20,10 @@ export const Router = () =>{
       <Route path='pedidos' element={<Pedidos/>}/>
       <Route path='ofertas' element={<Ofertas/>}/>
       <Route path='*' element={<NaoEncontrado/>}/>
+      <Route path='cadastro' element={<Conta/>}/>
      </Routes>
      <Footer/>
+    
     </BrowserRouter>
     </>
   );

@@ -1,0 +1,39 @@
+.cadastro {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  padding: 1rem;
+}
+
+.form {
+  border: 1px solid red;
+  margin: 0 21.563rem 0 21.563rem;
+  flex-direction: column;
+}
+
+#criar-conta {
+  display: flex;
+  border: 1px solid red;
+  width:27.5rem ;
+  height:2.25rem ;
+  /* margin: -4.375rem 0 0 0 4rem; */
+  /* padding: 0 0 0 0; */
+}
+
+.box-criar-conta {
+  border: 1px solid red;
+  width: 46.875rem;
+  height: 33.625rem;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.entrega {
+  border: 1px solid red;
+  width: 46.875rem;
+  height: 40.438rem;
+  background-color: #FFFFFF;
+}
+
