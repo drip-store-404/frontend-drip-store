@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Produtos = ({ categoria, nome, precoOriginal, precoComDesconto, temDesconto }) => {
   return (
-    <Link to="/produtos" className='produto-link'>
+    <Link to='/compras' className='produto-link'>
       <div className='card'>
 
         <div className='box-card'>

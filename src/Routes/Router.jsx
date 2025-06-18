@@ -6,7 +6,8 @@ import { Produtos } from '../pages/Produtos';
 import { Pedidos } from '../pages/Pedidos';
 import { Ofertas } from '../pages/Ofertas';
 import { NaoEncontrado } from '../pages/NaoEncontrado';
-import {Footer} from '../components/Footer/Footer.jsx'
+import {Footer} from '../components/Footer/Footer.jsx';
+import { Compras } from '../components/Produtos/Comprar.jsx';
 
 export const Router = () =>{
   return (
@@ -19,6 +20,7 @@ export const Router = () =>{
       <Route path='pedidos' element={<Pedidos/>}/>
       <Route path='ofertas' element={<Ofertas/>}/>
       <Route path='*' element={<NaoEncontrado/>}/>
+      <Route path="compras" element={<Compras />} />
      </Routes>
      <Footer/>
     </BrowserRouter>

@@ -1,0 +1,198 @@
+#all {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  padding: 1rem;
+}
+
+#all .box-relacionados {
+  max-width: 100%;
+  width: 77rem;
+  margin: 0 -7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.produtosrel {
+  display: flex;
+  align-items: center;
+  width: 75.7rem;
+  height: 2.375rem;
+  margin: 5rem 0 0 15rem;
+  justify-content: space-between;
+  position: absolute;
+  cursor: pointer;
+
+}
+
+.ver-todos {
+  display: flex;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #C92071;
+}
+
+#seta {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0 0 0.25rem;
+
+}
+
+#box-rel {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 2.375rem;
+  color: #474747;
+  letter-spacing: 0.047rem;
+  font-size: 1.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(13.75rem, 1fr));
+  margin: 6rem 0 8.75rem 0;
+
+}
+
+
+/*oi*/
+.ptotal {
+  display: flex;
+}
+
+.phome {
+  margin: 1.250rem 0 0 6.250rem;
+  color: #474747;
+  font-weight: 700;
+  font-size: 0.875;
+  line-height: 1.375rem;
+  letter-spacing: 0.047rem;
+  padding-right: .5rem;
+}
+
+.pcaminho {
+  color: #474747;
+  margin: 1.250rem 0 0 0;
+  font-weight: 400;
+  font-size: 0.875;
+  line-height: 1.375rem;
+  letter-spacing: 0.047rem;
+}
+
+.card-produto {
+  display: flex;
+}
+
+.imagem-produto {
+  align-items: center;
+  justify-content: center;
+  margin:2.5rem 0 0 6.250rem;
+  width: 32rem;
+  height: 28rem;
+  background-color: #E2E3FF;
+}
+
+.imagem-produto img {
+  margin-top: 2rem;
+  width: 31.151rem;
+  transform: rotate(20deg)
+}
+
+.info-produto {
+  padding: 15px;
+}
+
+.categoria {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.nome {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.avaliacao {
+  color: #f5a623;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.preco {
+  margin: 10px 0;
+}
+
+.preco-antigo {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 5px;
+}
+
+.preco-novo {
+  color: #e60000;
+  font-weight: bold;
+}
+
+.preco-normal {
+  font-weight: bold;
+}
+
+.descricao {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tamanhos,
+.cores {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.cores-opcoes {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.cor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.cor-azul {
+  background-color: #00f;
+}
+
+.cor-cinza {
+  background-color: #aaa;
+}
+
+.cor-preto {
+  background-color: #000;
+}
+
+.cor-roxo {
+  background-color: #800080;
+}
+
+.botao-comprar {
+  background-color: #f9a825;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.botao-comprar:hover {
+  background-color: #f57f17;
+}
