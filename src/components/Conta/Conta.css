@@ -11,15 +11,17 @@
   border: 1px solid red;
   margin: 0 21.563rem 0 21.563rem;
   flex-direction: column;
+
 }
 
 #criar-conta {
   display: flex;
   border: 1px solid red;
-  width:27.5rem ;
-  height:2.25rem ;
-  /* margin: -4.375rem 0 0 0 4rem; */
-  /* padding: 0 0 0 0; */
+  width: 27.5rem;
+  height: 2.25rem;
+
+
+
 }
 
 .box-criar-conta {
@@ -28,6 +30,54 @@
   height: 33.625rem;
   flex-direction: column;
   background-color: #FFFFFF;
+  border-radius: 0.25rem;
+  gap: 1.25rem;
+  /* margin: 7.37 0 0 0; */
+
+}
+
+#info-conta {
+  border: 1px solid red;
+  display: flex;
+  width: 13rem;
+  height: 1.375rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.047rem;
+  color: #474747;
+  justify-content: center;
+
+}
+
+#hr-conta {
+  width: 43.125rem;
+  border: 0.063rem;
+  background-color: #CCCCCC;
+}
+
+.name-pai {
+  border: 1px solid red;
+  display: flex;
+  width: 43.125rem;
+  height: 5.563rem;
+  flex-direction: column;
+  border-radius: 0.25rem;
+}
+
+#nome-input::placeholder{
+  color: red;
+  /* opacity:  ;   */
+}
+
+#nome-input {
+  width:43.125rem ;
+  height: 3.75rem;
+  border-radius: 0.5rem ; 
+  background-color: #474747;
+  /* opacity: 4%; */
+  border: 0;
 }
 
 .entrega {
@@ -35,5 +85,18 @@
   width: 46.875rem;
   height: 40.438rem;
   background-color: #FFFFFF;
+  border-radius: 0.25rem;
 }
 
+.box-input-nome {
+margin: 1.25rem 0 0 1.875rem;
+}
+
+.titulo-p {
+  margin: 1.875rem 0 1.25rem 1.875rem;
+  font-weight: 700;
+}
+.hr-cadastro {
+  width: 43.125rem;
+  margin: 1.25rem 0 0 1.875rem;
+}

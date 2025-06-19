@@ -1,30 +1,95 @@
 import './Conta.css'
+import { Input } from '../Input/Input';
 
 export const Conta = () => {
   return (
     <section className='cadastro'>
-      <form  className='form' action="#">
+      <form className='form' action="#">
         <h1 id='criar-conta'>Criar Conta</h1>
 
         <div className='box-criar-conta'>
 
-          <p id='info-conta'>Informações Pessoais</p>
 
-          <hr id='hr-conta'></hr>
 
-          <label htmlFor="nome">Nome Completo *</label>
-          <input id='nome-input' placeholder='Insira seu nome' type="text" />
+          {/* <p id='info-conta'>Informações Pessoais</p> */}
+          <p className='titulo-p'>Informações Pessoais</p>
+          <hr className='hr-cadastro' />
+          <div className='box-input-nome'>
+            <label htmlFor="nome">Nome Completo *</label>
+            <Input
+              type={'text'}
+              placeholder={'Insira seu nome'}
+              // margin={'0 3rem 0 1.688rem'}
+              width={'34.938rem'}
+              height={'3.75rem'}
+            />
+          </div>
 
-          <label htmlFor="cpf"> CPF *</label>
-          <input id='cpf-input' placeholder='Insira seu CPF' type="text" />
+          <div className='box-input-nome'>
+            <label htmlFor="nome">CPF *</label>
+            <Input
+              type={'text'}
+              placeholder={'Insira seu CPF'}
+              // margin={'0 3rem 0 1.688rem'}
+              width={'34.938rem'}
+              height={'3.75rem'}
+            />
+          </div>
 
-          <label htmlFor="email"></label>
-          <input id='email-input' placeholder='Insira seu e-mail' type="text" />
 
-          <label htmlFor="celular"></label>
-          <input id='celular-input' placeholder='Insira seu Celular' type="text" />
+          <div className='box-input-nome'>
+            <label htmlFor="nome"> E-mail*</label>
+            <Input
+              type={'text'}
+              placeholder={'Insira seu email'}
+              // margin={'0 3rem 0 1.688rem'}
+              width={'34.938rem'}
+              height={'3.75rem'}
+            />
+          </div>
+
+          <div className='box-input-nome'>
+            <label htmlFor="nome">Celular *</label>
+            <Input
+              type={'text'}
+              placeholder={'Insira seu celular'}
+              // margin={'0 3rem 0 1.688rem'}
+              width={'34.938rem'}
+              height={'3.75rem'}
+            />
+          </div>
+
+
+
+
+          {/* 
+          <div className='name-pai'>
+            <label htmlFor="nome">Nome Completo *</label>
+            <input id='nome-input' placeholder='Insira seu nome' type="text" />
+
+          </div>
+
+          <div className='cpf-pai'>
+            <label htmlFor="cpf"> CPF *</label>
+            <input id='cpf-input' placeholder='Insira seu CPF' type="text" />
+
+          </div>
+
+          <div className='email-pai'>
+            <label htmlFor="email"></label>
+            <input id='email-input' placeholder='Insira seu e-mail' type="text" />
+
+          </div>
+
+          <div className='celular-pai'>
+            <label htmlFor="celular"></label>
+            <input id='celular-input' placeholder='Insira seu Celular' type="text" /><br />
+
+          </div> */}
 
         </div> {/* box-criar-conta */}
+
+
 
         <div className='entrega'>
 
