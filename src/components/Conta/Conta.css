@@ -1,102 +1,99 @@
 .cadastro {
   display: flex;
-  max-width: 100%;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #F5F5F5;
-  padding: 1rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
 .form {
-  border: 1px solid red;
-  margin: 0 21.563rem 0 21.563rem;
+  display: flex;
   flex-direction: column;
-
+  gap: 2rem;
+  width: 100%;
+  max-width: 50rem;
+  /* limita largura máxima */
+  margin: 0 auto;
 }
 
 #criar-conta {
-  display: flex;
-  border: 1px solid red;
-  width: 27.5rem;
-  height: 2.25rem;
-
-
-
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  /* texto responsivo */
+  margin-bottom: 1rem;
+  color: #333;
 }
 
-.box-criar-conta {
-  border: 1px solid red;
-  width: 46.875rem;
-  height: 33.625rem;
-  flex-direction: column;
-  background-color: #FFFFFF;
-  border-radius: 0.25rem;
-  gap: 1.25rem;
-  /* margin: 7.37 0 0 0; */
-
-}
-
-#info-conta {
-  border: 1px solid red;
-  display: flex;
-  width: 13rem;
-  height: 1.375rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  letter-spacing: 0.047rem;
-  color: #474747;
-  justify-content: center;
-
-}
-
-#hr-conta {
-  width: 43.125rem;
-  border: 0.063rem;
-  background-color: #CCCCCC;
-}
-
-.name-pai {
-  border: 1px solid red;
-  display: flex;
-  width: 43.125rem;
-  height: 5.563rem;
-  flex-direction: column;
-  border-radius: 0.25rem;
-}
-
-#nome-input::placeholder{
-  color: red;
-  /* opacity:  ;   */
-}
-
-#nome-input {
-  width:43.125rem ;
-  height: 3.75rem;
-  border-radius: 0.5rem ; 
-  background-color: #474747;
-  /* opacity: 4%; */
-  border: 0;
-}
-
+.box-criar-conta,
 .entrega {
-  border: 1px solid red;
-  width: 46.875rem;
-  height: 40.438rem;
+  width: 100%;
   background-color: #FFFFFF;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #474747;
 }
 
 .box-input-nome {
-margin: 1.25rem 0 0 1.875rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.box-input-nome label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.025rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #474747;
 }
 
 .titulo-p {
-  margin: 1.875rem 0 1.25rem 1.875rem;
   font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #333;
 }
+
 .hr-cadastro {
-  width: 43.125rem;
-  margin: 1.25rem 0 0 1.875rem;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .cadastro {
+    padding: 1rem 0.5rem;
+  }
+
+  .box-criar-conta,
+  .entrega {
+    padding: 1.5rem;
+  }
+
+  .titulo-p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 480px) {
+  .cadastro {
+    padding: 1rem 0.25rem;
+  }
+
+  .box-criar-conta,
+  .entrega {
+    padding: 1rem;
+  }
+
+  #criar-conta {
+    text-align: center;
+  }
 }
