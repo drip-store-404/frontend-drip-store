@@ -1,5 +1,6 @@
 import './Conta.css'
 import { Input } from '../Input/Input';
+import { Button } from '../Button/Button';
 
 export const Conta = () => {
   return (
@@ -10,13 +11,13 @@ export const Conta = () => {
         <div className='box-criar-conta'>
           <p className='titulo-p'>Informações Pessoais</p>
           <hr className='hr-cadastro' />
-          
+
           <div className='box-input-nome'>
             <label htmlFor="nome">Nome Completo *</label>
             <Input
               type={'text'}
               placeholder={'Insira seu nome'}
-              width={'100%'} // Responsivo
+              width={'100%'} 
               height={'3.75rem'}
             />
           </div>
@@ -26,7 +27,7 @@ export const Conta = () => {
             <Input
               type={'text'}
               placeholder={'Insira seu CPF'}
-              width={'100%'} // Responsivo
+              width={'100%'} 
               height={'3.75rem'}
             />
           </div>
@@ -36,7 +37,7 @@ export const Conta = () => {
             <Input
               type={'text'}
               placeholder={'Insira seu email'}
-              width={'100%'} // Responsivo
+              width={'100%'}
               height={'3.75rem'}
             />
           </div>
@@ -46,7 +47,7 @@ export const Conta = () => {
             <Input
               type={'text'}
               placeholder={'Insira seu celular'}
-              width={'100%'} // Responsivo
+              width={'100%'} 
               height={'3.75rem'}
             />
           </div>
@@ -61,7 +62,7 @@ export const Conta = () => {
             <Input
               type={'text'}
               placeholder={'Insira seu endereço'}
-              width={'100%'} // Responsivo
+              width={'100%'} 
               height={'3.75rem'}
             />
           </div>
@@ -71,7 +72,7 @@ export const Conta = () => {
             <Input
               type={'text'}
               placeholder={'Insira seu bairro'}
-              width={'100%'} // Responsivo
+              width={'100%'} 
               height={'3.75rem'}
             />
           </div>
@@ -81,7 +82,7 @@ export const Conta = () => {
             <Input
               type={'text'}
               placeholder={'Insira sua cidade'}
-              width={'100%'} // Responsivo
+              width={'100%'} 
               height={'3.75rem'}
             />
           </div>
@@ -91,7 +92,7 @@ export const Conta = () => {
             <Input
               type={'text'}
               placeholder={'Insira seu CEP'}
-              width={'100%'} // Responsivo
+              width={'100%'} 
               height={'3.75rem'}
             />
           </div>
@@ -101,12 +102,27 @@ export const Conta = () => {
             <Input
               type={'text'}
               placeholder={'Insira seu complemento'}
-              width={'100%'} // Responsivo
+              width={'100%'} 
               height={'3.75rem'}
             />
           </div>
         </div>
+
+        <div className='conta-checkbox'>
+          <input type="checkbox" />
+          <p id='p-checkbox'>
+            Quero receber por email ofertas e novidades das lojas da Digital Store. A frequência de envios pode variar de acordo com a interação do cliente.
+          </p>
+        </div>
+
+        <Button
+          width={'100%'}
+          height={'3rem'}
+        >Criar Conta
+        </Button>
       </form>
+
+
     </section>
   );
 }

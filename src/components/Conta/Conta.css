@@ -66,6 +66,30 @@
   margin-bottom: 1.5rem;
 }
 
+.conta-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+
+}
+
+input[type="checkbox"]{
+ accent-color: #C92071;
+ width: 1.375rem;
+ height: 1.375rem;
+}
+
+#p-checkbox {
+  width: 44.875rem;
+  height: 2.75rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.025rem;
+  color: #474747;
+}
+
 /* Responsividade para tablets */
 @media (max-width: 768px) {
   .cadastro {
