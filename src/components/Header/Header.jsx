@@ -28,6 +28,7 @@ export const Header = () => {
             margin={'1.2rem 0 0 0'}
             color={'#474747'}
             href={'#'}
+            to={'/cadastro'}
             textDecoration={'underline'}
           />
           <Nav

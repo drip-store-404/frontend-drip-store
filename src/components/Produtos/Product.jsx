@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export const Produtos = ({ categoria, nome, precoOriginal, precoComDesconto, temDesconto }) => {
   return (
     <Link to="/produtos" className='produto-link'>
-      <div className='card'>
 
         <div className='box-card'>
 
@@ -35,7 +34,6 @@ export const Produtos = ({ categoria, nome, precoOriginal, precoComDesconto, tem
           { }
         </div>
 
-      </div >
     </Link>
 
 
