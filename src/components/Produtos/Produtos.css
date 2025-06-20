@@ -21,20 +21,21 @@
   justify-items: center;
 }
 
-/* Link do produto - container principal */
+
 .produto-link {
   display: flex;
   flex-direction: column;
   width: 18rem;
-  height: 27.438rem;
+  height: auto;
+  min-height: 27.438rem; 
   text-decoration: none;
   color: inherit;
-  overflow: hidden;
+  overflow: visible; 
   transition: transform 0.2s ease;
   margin: 0;
-  /* Remove margens conflitantes */
   padding: 0;
 }
+
 
 /* Container da imagem */
 .box-card {
@@ -122,10 +123,14 @@
 
 /* Container dos preços */
 .preco-card {
+  .preco-card {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   margin-top: auto;
+  padding-bottom: 1.5rem; 
+  min-height: 3rem; 
+}
   /* Empurra para baixo */
 }
 
@@ -145,8 +150,8 @@
 .preco-atual-card {
   color: #1F1F1F;
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
   line-height: 1.2rem;
   letter-spacing: 0.047rem;
   margin: 0;

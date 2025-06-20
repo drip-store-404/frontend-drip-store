@@ -9,9 +9,10 @@
 #all .box-relacionados {
   max-width: 100%;
   width: 77rem;
-  margin: 0 -7rem;
+  margin: 5rem 0 0 6rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .produtosrel {
@@ -19,7 +20,6 @@
   align-items: center;
   width: 75.7rem;
   height: 2.375rem;
-  margin: 5rem 0 0 15rem;
   justify-content: space-between;
   position: absolute;
   cursor: pointer;

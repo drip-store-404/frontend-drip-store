@@ -13,7 +13,7 @@ export const Produtos = ({ categoria, nome, precoOriginal, precoComDesconto, tem
           <img className='box-produto' src="../../../public/sapato.svg" />
 
         </div>
-      
+
         <div className='box-detalhes'>
 
           <p className='categoria-card'>{categoria}</p>
@@ -34,7 +34,7 @@ export const Produtos = ({ categoria, nome, precoOriginal, precoComDesconto, tem
           { }
           { }
         </div>
-
+      </div>
     </Link>
 
 
