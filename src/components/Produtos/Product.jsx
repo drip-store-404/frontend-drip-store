@@ -35,7 +35,6 @@ export const Produtos = ({ categoria, nome, precoOriginal, precoComDesconto, tem
           { }
         </div>
 
-      </div >
     </Link>
 
 

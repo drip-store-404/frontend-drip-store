@@ -10,7 +10,7 @@ export const Destaques = () => {
     nome: `K-Swiss V8 - Masculino`,
     precoOriginal: 200,
     precoComDesconto: 100,
-    temDesconto: i< 4,
+    temDesconto: i< 2,
   }));
 
 

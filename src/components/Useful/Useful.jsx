@@ -2,7 +2,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
-export const Useful = ({ margin, color, to, value, target, isActive, onClick, fontWeight, textUnderlineOffset, borderBottom, paddingBottom, borderEndStartRadius, borderEndEndRadius }) => {
+export const Useful = ({ margin, color, to, value, target, isActive, onClick, fontWeight, textDecoraction, textUnderlineOffset, borderBottom, paddingBottom, borderEndStartRadius, borderEndEndRadius }) => {
 
   const location = useLocation();
   const linkRef = useRef(null);
@@ -28,6 +28,7 @@ export const Useful = ({ margin, color, to, value, target, isActive, onClick, fo
           fontWeight: isActive ? '700' : fontWeight,
           textUnderlineOffset: isActive ? '0.0625rem' : textUnderlineOffset
         }}
+        textDecoraction={textDecoraction}
         to={to}
         target={target}
       >{value}</Link>
