@@ -47,9 +47,13 @@ export const SectionCollection = () => {
         <h2>Coleções em Destaque</h2>
         <div className="features-container">
           <FeatureCollection />
+            <img src='/tshirt-_1_.svg'/>
           <FeatureCollection />
+            <img src='/pants.svg'/>
           <FeatureCollection />
+            <img src='/headphones_1.svg'/>
           <FeatureCollection />
+            <img src='/sneakers.svg'/>
           <FeatureCollection />
         </div>
       </div>
