@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Layout principal dos produtos */
+.layout-produtos {
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.pagina-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  justify-items: center;
+}
+
+
+.produto-link {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: auto;
+  min-height: 27.438rem; 
+  text-decoration: none;
+  color: inherit;
+  overflow: visible; 
+  transition: transform 0.2s ease;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Container da imagem */
+.box-card {
+  position: relative;
+  /* Para posicionar o desconto */
+  display: flex;
+  width: 100%;
+  height: 20.063rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Imagem do produto */
+.box-produto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+  /* Espaçamento interno para a imagem */
+}
+
+/* Badge de desconto */
+.span-desconto-card {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  width: 6rem;
+  height: 2rem;
+  background-color: #E7FF86;
+  color: #474747;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0.047rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.813rem;
+  z-index: 1;
+}
+
+/* Container dos detalhes */
+.box-detalhes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 7.375rem;
+  gap: 0.5rem;
+}
+
+/* Categoria */
+.categoria-card {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  color: #8F8F8F;
+  letter-spacing: 0.047rem;
+  margin: 0 0 0.25rem 0;
+}
+
+/* Nome do produto */
+.nome-card {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.047rem;
+  color: #474747;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 42px;
+}
+
+/* Container dos preços */
+.preco-card {
+  .preco-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: auto;
+  padding-bottom: 1.5rem; 
+  min-height: 3rem; 
+}
+  /* Empurra para baixo */
+}
+
+/* Preço original (riscado) */
+.preco-original-card {
+  color: #8F8F8F;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.047rem;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+/* Preço atual (com desconto) */
+.preco-atual-card {
+  color: #1F1F1F;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.047rem;
+  margin: 0;
+}
+
+/* Preço sem desconto */
+.preco-sem-desconto {
+  color: #1F1F1F;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.047rem;
+  margin: 0;
+}
+
+.pagina-produtos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Responsividade */
+@media (max-width: 87.5rem) {
+  .pagina-produtos {
+    max-width: 56.25rem;
+  }
+
+  .produto-link {
+    width: 16rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 75rem) {
+  .layout-produtos {
+    padding: 1rem;
+  }
+
+  .pagina-produtos {
+    max-width: 37.5rem;
+  }
+
+  .produto-link {
+    width: 15rem;
+    height: 23rem;
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .layout-produtos {
+    padding: 1rem;
+  }
+
+  .pagina-produtos {
+    max-width: 37.5rem;
+    gap: 1rem;
+  }
+
+  .produto-link {
+    width: 15rem;
+    height: 25rem;
+  }
+
+  .box-card {
+    height: 17.5rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .pagina-produtos {
+    max-width: 18.75rem;
+  }
+
+  .produto-link {
+    width: 17.5rem;
+    height: 27.5rem;
+  }
+
+  .box-card {
+    height: 20rem;
+  }
+}
