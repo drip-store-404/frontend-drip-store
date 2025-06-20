@@ -1,4 +1,168 @@
+
 .section-collection {
-    border: 1px solid red;
-    padding: 0 6.25rem;
+  padding: 0 6.25rem;
+  margin-bottom: 4rem;
+}
+
+.cards-collection h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Container que organiza os três cards lado a lado */
+.cards-container {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Cada card individual */
+.card-item {
+  width: 25.313rem;
+  height: 15.688rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #D8E3F2;
+  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Conteúdo de texto do card */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+/* Desconto */
+.discount {
+  width: 6rem;
+  height:2rem;
+  background: #E7FF86;
+  color: #474747;
+  padding: 0.65rem 1rem;
+  border-radius: 1.813rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Títulos dos cards */
+.card-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1F1F1F;
+  margin: 0;
+  line-height: 2.2rem;
+}
+
+.card-subtitle {
+  font-size: 1.9rem;
+  font-weight:700 ;
+  color: #1F1F1F;
+  margin: 0;
+  margin-bottom: 1rem;
+  line-height: 2.2rem;
+}
+
+/* Botão do card */
+.card-button {
+  width: 9.563rem;
+  height: 3rem;
+  background: white;
+  color:#C92071;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height:1.5rem;
+  letter-spacing: 0.047rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index:2;
+}
+
+.card-button:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+/* Imagem do card */
+.card-image {
+  width: 15.125rem;
+  height: 15.688rem;
+  margin-left:-1rem;   
+  object-fit: contain;
+  flex-shrink: 0;
+  transform: translateX(-0.438rem);
+  overflow:hidden;
+  z-index: 0;
+}
+
+/* Seção de coleções em destaque */
+.collections {
+  margin-top: 3rem;
+}
+
+.collections h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.features-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .section-collection {
+    padding: 0 2rem;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-item {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-item {
+    height: auto;
+    min-height: 200px;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .card-content {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .card-image {
+    width: 25.313rem;
+    height: 15.688rem;
+  }
 }
