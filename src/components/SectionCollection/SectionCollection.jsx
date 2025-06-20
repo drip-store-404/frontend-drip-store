@@ -1,4 +1,6 @@
 
+
+import React from 'react';
 import './SectionCollection.css';
 
 export const SectionCollection = () => {
