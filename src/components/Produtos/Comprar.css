@@ -1,0 +1,225 @@
+#all {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  padding: 1rem;
+}
+
+#all .box-relacionados {
+  max-width: 100%;
+  width: 77rem;
+  margin: 0 -7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.produtosrel {
+  display: flex;
+  align-items: center;
+  width: 75.7rem;
+  height: 2.375rem;
+  margin: 5rem 0 0 15rem;
+  justify-content: space-between;
+  position: absolute;
+  cursor: pointer;
+
+}
+
+.ver-todos {
+  display: flex;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #C92071;
+}
+
+#seta {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0 0 0.25rem;
+
+}
+
+#box-rel {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 2.375rem;
+  color: #474747;
+  letter-spacing: 0.047rem;
+  font-size: 1.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(13.75rem, 1fr));
+  margin: 6rem 0 8.75rem 0;
+
+}
+
+
+/*oi*/
+.ptotal {
+  display: flex;
+}
+
+.phome {
+  margin: 1.250rem 0 0 6.250rem;
+  color: #474747;
+  font-weight: 700;
+  font-size: 0.875;
+  line-height: 1.375rem;
+  letter-spacing: 0.047rem;
+  padding-right: .5rem;
+}
+
+.pcaminho {
+  color: #474747;
+  margin: 1.250rem 0 0 0;
+  font-weight: 400;
+  font-size: 0.875;
+  line-height: 1.375rem;
+  letter-spacing: 0.047rem;
+}
+
+.card-produto {
+  width: 80rem;
+  display: flex;
+}
+
+.carrossel {
+  width: 43.796rem;
+  height: 35.688rem;
+  margin: 2.5rem 0 0 6.250rem;
+  border-radius: .250rem;
+}
+
+.carrossel .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.carrossel .swiper-slide {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imagem-principal {
+  width: 85% !important;
+  height: 85% !important;
+  display: block;
+  transform: rotate(18deg);
+}
+
+.info-produto {
+  padding: 15px;
+}
+
+.categoria {
+  color: #888;
+  margin: 0.625rem 0 0 2.517rem;
+  font-size: .750rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: 0.031rem;
+}
+
+.nome {
+  color: #1F1F1F;
+  margin: 1.3rem 0 0 2.517rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.250rem;
+  letter-spacing: 0.063rem;
+}
+
+.avaliacao {
+  color: #8F8F8F;
+  margin: 0.875rem 0 0 2.517rem;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: 0.031rem;
+}
+
+.preco {
+  color: #474747;
+  margin: 1.563rem 0 0 2.517rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+  letter-spacing: 0.031rem;
+}
+
+.preco p {
+  color: #474747;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0.031rem;
+}
+
+.descricao {
+  margin: 1.563rem 0 0 2.517rem;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tamanhos,
+.cores {
+   margin: 1.563rem 0 0 2.517rem;
+  font-size: 0.9em;
+}
+
+.cores-opcoes {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.cor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.cor-azul {
+  background-color: #6FEEFF;
+}
+
+.cor-cinza {
+  background-color: #FF6969;
+}
+
+.cor-preto {
+  background-color: #5E5E5E;
+}
+
+.cor-roxo {
+  background-color: #6D70B7;
+}
+
+.botao-comprar {
+  background-color: #f9a825;
+  color: white;
+  width: 13.750rem;
+  height: 3rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.botao-comprar:hover {
+  background-color: #f57f17;
+}

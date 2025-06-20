@@ -6,7 +6,8 @@ import { Produtos } from '../pages/Produtos';
 import { Pedidos } from '../pages/Pedidos';
 import { Ofertas } from '../pages/Ofertas';
 import { NaoEncontrado } from '../pages/NaoEncontrado';
-import {Footer} from '../components/Footer/Footer.jsx'
+import {Footer} from '../components/Footer/Footer.jsx';
+import { Compras } from '../components/Produtos/Comprar.jsx';
 import { Conta } from '../components/Conta/conta.jsx';
 
 export const Router = () =>{
@@ -20,6 +21,7 @@ export const Router = () =>{
       <Route path='pedidos' element={<Pedidos/>}/>
       <Route path='ofertas' element={<Ofertas/>}/>
       <Route path='*' element={<NaoEncontrado/>}/>
+      <Route path="compras" element={<Compras />} />
       <Route path='cadastro' element={<Conta/>}/>
      </Routes>
      <Footer/>
