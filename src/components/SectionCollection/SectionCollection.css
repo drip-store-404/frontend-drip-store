@@ -1,4 +1,4 @@
-
+ 
 .section-collection {
   padding: 0 6.25rem;
   margin-bottom: 4rem;
@@ -114,19 +114,21 @@
 
 /* Seção de coleções em destaque */
 .collections {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .collections h2 {
-  width: 17.688rem;
+  width: 25rem;
   height: 2.375rem;
   font-size: 1.5rem;
+  text-align: center;
   font-weight: 700;
   line-height: 2.375rem;
   justify-content: center;
   letter-spacing: 0.047rem;
   margin-top: 6rem;
-  margin-left: 30rem;
+  margin-left: auto;
+  margin-right: auto;
   color: #333;
   margin-bottom: 1.5rem;
 }
@@ -137,6 +139,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 0.2rem;
   
 }
 
@@ -157,22 +160,93 @@
   }
 }
 
+
+/* Estilo para cada item de categoria */
+.feature-item {
+  width: 6.5rem;
+  height: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  border-radius: 9.375rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  min-width: 120px;
+  position: relative;
+}
+
+.feature-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Ícone da categoria */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .feature-item:hover .feature-icon 
+
+
+/* Texto da categoria */
+.feature-label {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #474747;
+  text-align: center;
+  margin: 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.feature-item:hover .feature-label {
+  color: #C92071;
+}
+
+/* Responsividade para features */
 @media (max-width: 768px) {
-  .card-item {
+  .features-container {
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  
+  .feature-item {
+    min-width: 100px;
+    padding: 1rem 0.5rem;
+  }
+  
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature-label {
+    font-size: 0.8rem;
+  }
+}
+  
+
+@media (max-width: 768px) {
+.card-item {
     height: auto;
     min-height: 200px;
     flex-direction: column;
     text-align: center;
     padding: 1.5rem;
-  }
+}
   
-  .card-content {
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .card-image {
-    width: 25.313rem;
+.card-content {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+width: 25.313rem;
     height: 15.688rem;
   }
 }
