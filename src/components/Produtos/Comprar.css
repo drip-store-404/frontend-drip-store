@@ -84,22 +84,37 @@
 }
 
 .card-produto {
+  width: 80rem;
   display: flex;
 }
 
-.imagem-produto {
-  align-items: center;
-  justify-content: center;
-  margin:2.5rem 0 0 6.250rem;
-  width: 32rem;
-  height: 28rem;
-  background-color: #E2E3FF;
+.carrossel {
+  width: 43.796rem;
+  height: 35.688rem;
+  margin: 2.5rem 0 0 6.250rem;
+  border-radius: .250rem;
 }
 
-.imagem-produto img {
-  margin-top: 2rem;
-  width: 31.151rem;
-  transform: rotate(20deg)
+.carrossel .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.carrossel .swiper-slide {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imagem-principal {
+  width: 85% !important;
+  height: 85% !important;
+  display: block;
+  transform: rotate(18deg);
 }
 
 .info-produto {
@@ -108,40 +123,50 @@
 
 .categoria {
   color: #888;
-  font-size: 0.9em;
+  margin: 0.625rem 0 0 2.517rem;
+  font-size: .750rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: 0.031rem;
 }
 
 .nome {
-  font-size: 1.2em;
-  margin: 5px 0;
+  color: #1F1F1F;
+  margin: 1.3rem 0 0 2.517rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.250rem;
+  letter-spacing: 0.063rem;
 }
 
 .avaliacao {
-  color: #f5a623;
-  font-size: 0.9em;
-  margin-bottom: 10px;
+  color: #8F8F8F;
+  margin: 0.875rem 0 0 2.517rem;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: 0.031rem;
 }
 
 .preco {
-  margin: 10px 0;
+  color: #474747;
+  margin: 1.563rem 0 0 2.517rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+  letter-spacing: 0.031rem;
 }
 
-.preco-antigo {
-  text-decoration: line-through;
-  color: #888;
-  margin-right: 5px;
-}
-
-.preco-novo {
-  color: #e60000;
-  font-weight: bold;
-}
-
-.preco-normal {
-  font-weight: bold;
+.preco p {
+  color: #474747;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0.031rem;
 }
 
 .descricao {
+  margin: 1.563rem 0 0 2.517rem;
   font-size: 0.9em;
   color: #555;
   margin-bottom: 10px;
@@ -149,7 +174,7 @@
 
 .tamanhos,
 .cores {
-  margin: 5px 0;
+   margin: 1.563rem 0 0 2.517rem;
   font-size: 0.9em;
 }
 
@@ -168,24 +193,26 @@
 }
 
 .cor-azul {
-  background-color: #00f;
+  background-color: #6FEEFF;
 }
 
 .cor-cinza {
-  background-color: #aaa;
+  background-color: #FF6969;
 }
 
 .cor-preto {
-  background-color: #000;
+  background-color: #5E5E5E;
 }
 
 .cor-roxo {
-  background-color: #800080;
+  background-color: #6D70B7;
 }
 
 .botao-comprar {
   background-color: #f9a825;
   color: white;
+  width: 13.750rem;
+  height: 3rem;
   padding: 10px;
   border: none;
   border-radius: 5px;

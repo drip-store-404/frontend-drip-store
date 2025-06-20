@@ -2,9 +2,10 @@ import './Comprar.css'
 import { Produtos } from './Product';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { useState } from 'react';
 
 export const Compras = () => {
 
@@ -17,22 +18,19 @@ export const Compras = () => {
         temDesconto: i < 2,
     }));
 
-        const imagens = [
-        {
-
-            imagem: '../../../public/Tenis.png'
-        },
-        {
-            imagem: '../../../public/Tenis.png'
-        },
-        {
-            imagem: '../../../public/Tenis.png'
-        },
-        {
-            imagem: '../../../public/Tenis.png'
-        }
+    const imagens = [
+        { src: "/Tenis.png", corFundo: "#E2E3FF" },
+        { src: "/Tenis.png", corFundo: "#FFE8BC" },
+        { src: "/Tenis.png", corFundo: "#FFC0BC" },
+        { src: "/Tenis.png", corFundo: "#DEC699" },
     ];
 
+    const [fundoAtual, setFundoAtual] = useState(imagens[0].corFundo);
+
+    const handleSlideChange = (swiper) => {
+        const index = swiper.activeIndex;
+        setFundoAtual(imagens[index].corFundo);
+    };
     return (
         <section id="all">
             <div className='ptotal'>
@@ -40,34 +38,37 @@ export const Compras = () => {
                 <p className='pcaminho'>/ Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</p>
             </div>
             <div className='card-produto'>
-                <div className="imagem-produto">
-                    <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={30}
-                    slidesPerView={1}
-                    pagination={{ clickable: true }}
-                    autoplay={{ delay: 8000 }}
-                    loop={true}
+                <div
+                    className="carrossel"
+                    style={{ backgroundColor: fundoAtual, transition: 'background-color 0.5s ease' }}
                 >
-                    {imagens.map((imagem, index) => (
-                        <SwiperSlide
-                            key={index}
-                            style={{ backgroundImage: `url(${imagem.imagem})` }}>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                    <Swiper
+                        modules={[Navigation]}
+                        navigation
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        initialSlide={0}
+                        onSlideChange={handleSlideChange}
+                    >
+                        {imagens.map((imagem, index) => (
+                            <SwiperSlide key={index}>
+                                    <img src={imagem.src} alt={`Imagem ${index}`} className="imagem-principal" />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
+
 
                 <div className="info-produto">
                     <h2 className="nome">Tênis Nike Revolution 6 Next Nature Masculino</h2>
                     <p className="categoria">Casual | Nike | REF:38416711</p>
 
                     <div className="avaliacao">
-                        ⭐⭐⭐⭐☆ (90 avaliações)
+                        ⭐⭐⭐⭐⭐ (90 avaliações)
                     </div>
 
                     <div className="preco">
-                        <span className="preco-normal">R$ 225,00</span>
+                        <span>R$225,00</span>
                     </div>
 
                     <p className="descricao">
