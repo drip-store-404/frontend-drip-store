@@ -5,38 +5,57 @@ import { ShopCart } from '../ShopCart/ShopCart';
 import { Input } from '../Input/Input';
 import { Useful } from '../Useful/Useful';
 import { Nav } from '../Nav/Nav';
-import { useState} from 'react';
+import { useState, useEffect } from 'react';
 
 export const Header = () => {
   const [isActiveItem, setActiveItem] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  // Detectar se é mobile
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
   
   return (
     <header id="header">
       <div className='box-header'>
         <div className='box-header-children'>
-          <Logo margin={'.5rem 0 0 0.25rem'} />
+          <Logo margin={isMobile ? '0' : '.5rem 0 0 0.25rem'} />
+          
           <Input
             type={'text'}
-            placeholder={'Pesquisar produto...'}
-            margin={'0 3rem 0 1.688rem'}
-            width={'34.938rem'}
-            height={'3.75rem'}
+            placeholder={isMobile ? 'Buscar...' : 'Pesquisar produto...'}
+            margin={isMobile ? '0' : '0 3rem 0 1.688rem'}
+            width={isMobile ? '100%' : '34.938rem'}
+            height={isMobile ? '3rem' : '3.75rem'}
             src={'../../../public/search.svg'}
           />
-          <Useful
-            value={'Cadastre-se'}
-            margin={'1.2rem 0 0 0'}
-            color={'#474747'}
-            href={'#'}
-            to={'/cadastro'}
-            textDecoration={'underline'}
-          />
+          
+          {!isMobile && (
+            <Useful
+              value={'Cadastre-se'}
+              margin={'1.2rem 0 0 0'}
+              color={'#474747'}
+              href={'#'}
+              to={'/cadastro'}
+              textDecoration={'underline'}
+            />
+          )}
+          
           <Nav
-            position={'absolute'}
-            top={'8.375rem'}
-            gap={'2rem'}
-            width={'26.438rem'}
-            height={'1.813rem'}
+            position={isMobile ? 'static' : 'absolute'}
+            top={isMobile ? 'auto' : '8.375rem'}
+            gap={isMobile ? '1rem' : '2rem'}
+            width={isMobile ? '100%' : '26.438rem'}
+            height={isMobile ? 'auto' : '1.813rem'}
           >
             <li>
               <Useful
@@ -83,12 +102,27 @@ export const Header = () => {
               />
             </li>
           </Nav>
+          
+          {isMobile && (
+            <Useful
+              value={'Cadastre-se'}
+              margin={'0'}
+              color={'#474747'}
+              href={'#'}
+              to={'/cadastro'}
+              textDecoration={'underline'}
+            />
+          )}
         </div>
+        
         <Button
-          width={'7.125rem'}
-          height={'2.5rem'}
-          margin={'2.75rem 0 0 1.875rem'}
-        >Entrar</Button>
+          width={isMobile ? '5rem' : '7.125rem'}
+          height={isMobile ? '2rem' : '2.5rem'}
+          margin={isMobile ? '0' : '2.75rem 0 0 1.875rem'}
+        >
+          {isMobile ? 'Entrar' : 'Entrar'}
+        </Button>
+        
         <ShopCart value={2} />
       </div>
     </header>

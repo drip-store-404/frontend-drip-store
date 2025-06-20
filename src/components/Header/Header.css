@@ -2,18 +2,189 @@
   background-color: white;
 }
 
-#header .box-header {
+.box-header {
   width: 90rem;
   height: 12rem;
   margin: 0 auto;
-  padding: 0 6.250rem;
+  padding: 0 6.25rem;
   display: flex;
+  position: relative;
 }
 
-#header .box-header .box-header-children {
+.box-header .box-header-children {
   width: 62.063rem;
   height: 8.063rem;
   margin-top: 2.125rem;
   display: flex;
+  position: relative;
 }
 
+/* Tablet (até 1024px) */
+@media (max-width: 1024px) {
+  .box-header {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 2rem;
+    height: auto;
+    min-height: 10rem;
+  }
+  
+  .box-header .box-header-children {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Ajustar largura do input de busca */
+  .box-header-children input {
+    width: 100% !important;
+    max-width: 25rem;
+    margin: 0 !important;
+  }
+  
+  /* Reorganizar navegação */
+  nav {
+    position: static !important;
+    top: auto !important;
+    width: 100% !important;
+    margin-top: 1rem;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem !important;
+  }
+  
+  /* Botão Entrar */
+  button {
+    margin: 1rem 0 0 0 !important;
+  }
+}
+
+/* Mobile (até 768px) */
+@media (max-width: 768px) {
+  .box-header {
+    padding: 0 1rem;
+    height: auto;
+    min-height: 8rem;
+  }
+  
+  .box-header .box-header-children {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  /* Logo menor no mobile */
+  .box-header-children > div:first-child {
+    margin: 0 !important;
+  }
+  
+  /* Input de busca ocupa toda largura */
+  .box-header-children input {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    height: 3rem !important;
+  }
+  
+  /* Link de cadastro */
+  .box-header-children a {
+    margin: 0 !important;
+    align-self: flex-end;
+  }
+  
+  /* Navegação horizontal com scroll */
+  nav {
+    width: 100% !important;
+    overflow-x: auto;
+    margin-top: 0.5rem !important;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.5rem !important;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+  }
+  
+  nav li {
+    flex-shrink: 0;
+  }
+  
+  /* Botões no mobile */
+  .box-header > button,
+  .box-header > div:last-child {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .box-header > button {
+    width: 5rem !important;
+    height: 2rem !important;
+    font-size: 0.8rem;
+    margin: 0 !important;
+  }
+  
+  .box-header > div:last-child {
+    right: 6.5rem;
+  }
+}
+
+/* Mobile pequeno (até 480px) */
+@media (max-width: 480px) {
+  .box-header {
+    padding: 0 0.5rem;
+  }
+  
+  /* Esconder texto do botão no mobile muito pequeno */
+  .box-header > button {
+    width: 3rem !important;
+    font-size: 0;
+    position: relative;
+  }
+  
+  .box-header > button::after {
+    content: "↗";
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Navegação mais compacta */
+  nav ul {
+    gap: 1rem !important;
+  }
+  
+  nav li a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop grande (acima de 1440px) */
+@media (min-width: 1441px) {
+  .box-header {
+    max-width: 1440px;
+  }
+}
+
+/* Utilitários para elementos flexíveis */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .mobile-full-width {
+    width: 100% !important;
+  }
+  
+  .mobile-stack {
+    flex-direction: column !important;
+  }
+}
